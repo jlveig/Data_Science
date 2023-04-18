@@ -16,3 +16,5 @@ Para facilitar a consulta das previsões para todos os stakeholders, foi criado 
 É só testar! Entre no link abaixo e digite um número de 100 a 999 (cada número corresponde ao código de uma das lojas) e aguarde um minuto, logo o bot responderá a previsão de vendas da respectiva loja. Caso a loja que você requisitar não exista, o bot também avisará!
 
 https://t.me/rossmann1848_bot
+
+**Obs.** Os dados de treino não foram incluídos pois excediam o tamanho de 25Mb, limite do github.
