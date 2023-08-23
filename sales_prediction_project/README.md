@@ -1,14 +1,14 @@
 # sales_prediction
-Este projeto estuda a empresa fictícia Rossmann, que demanda do seu time de dados uma previsão das vendas de suas lojas para as próximas 6 semanas.
+Este projeto estuda a empresa fictícia Rossmann, que demanda do seu time de dados uma previsão das vendas de suas lojas para as próximas 6 semanas. O projeto se divide em 8 etapas, sendo as seguintes:
 
-* **1** Limpezas e adaptações básicas nos dados;
-* **2** São realizados ajustes para uma melhor exploração e utilização dos dados; 
-* **3** Filtragem de variáveis indesejadas;
-* **4** É realizado o Rescaling, para diminuir o viés dos modelos sobre as variáveis de maior abrangência; Encoding para transformar as variáveis categóricas em numéricas, compatibilizando assim o dataset com os algoritmos; e transformação das variáveis, particularmente os dias e meses, para que o algoritmo os entenda como fenômenos cíclicos;
-* **5** São selecionadas as variáveis que possuem maior correlação com a variável resposta utilizando o algoritmo Boruta. No projeto está incluido apenas o resultado da aplicação desse algoritmo;
-* **6** Seleciona-se o algoritmo xgboost para produzir o modelo final que irá para produção. O modelo é então refinado para maior precisão. Para não ocupar muita memória no bot do telegram, o n_estimators do modelo em produção foi reduzido para 500, apenas a título de demonstração. Porém, o modelo mais otimizado possui n_estimators=2500;
-* **7** É realizada a interpretação do erro do modelo, para verificar sua usabilidade;
-* **8** Por fim, é feito o deploy do modelo para produção.
+* **1** - Inicia-se por fazer limpezas e adaptações básicas nos dados;
+* **2** - São realizados ajustes para uma melhor exploração e utilização dos dados; 
+* **3** - Filtragem de variáveis indesejadas;
+* **4** - É realizado o Rescaling, para diminuir o viés dos modelos sobre as variáveis de maior abrangência; Encoding para transformar as variáveis categóricas em numéricas, compatibilizando assim o dataset com os algoritmos; e transformação das variáveis, particularmente os dias e meses, para que o algoritmo os entenda como fenômenos cíclicos;
+* **5** - São selecionadas as variáveis que possuem maior correlação com a variável resposta utilizando o algoritmo Boruta. No projeto está incluido apenas o resultado da aplicação desse algoritmo;
+* **6** - Seleciona-se o algoritmo xgboost para produzir o modelo final que irá para produção. O modelo é então refinado para maior precisão. Para não ocupar muita memória no bot do telegram, o n_estimators do modelo em produção foi reduzido para 500, apenas a título de demonstração. Porém, o modelo mais otimizado possui n_estimators=2500;
+* **7** - É realizada a interpretação do erro do modelo, para verificar sua usabilidade;
+* **8** - Por fim, é feito o deploy do modelo para produção.
 
 ## Consulta dos resultados de forma automatizada:
 
@@ -17,4 +17,4 @@ Para facilitar a consulta das previsões para todos os stakeholders, foi criado 
 
 https://t.me/rossmann1848_bot
 
-**Obs.** Os dados de treino não foram incluídos pois excediam o tamanho de 25Mb, limite do github.
+**Obs.** Os dados de treino não foram incluídos pois excediam o tamanho de 25Mb, limite do github, porém podem ser acessados através do site https://www.kaggle.com/competitions/rossmann-store-sales/data
